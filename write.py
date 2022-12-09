@@ -1,0 +1,5 @@
+data = open('data.txt','w')
+data.write('override \n')
+# data.write('aditya college \n')
+# data.write('E C E')
+data.close()
