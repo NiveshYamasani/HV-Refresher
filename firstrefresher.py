@@ -22,23 +22,29 @@ product_3 = int(input('quantity of third product :'))
 #     total = product_1 * price1 + product_2 * price2 + product_3 * price3
 #     print('The total amount is  : %.2f'%total)
  
- ##Using the List
-#l = [product_1 ,product_2,product_3]
-##using the for loop
-#for i in l:
+ 
+#l = [product_1 ,product_2,product_3]   ##Using the List
+
+#for i in l:   ##using the for loop
 #    print(i)
-##using If_else statements
-if((product_1<=0) or (product_2<=0) or (product_3<=0)):
+if((product_1<=0) or (product_2<=0) or (product_3<=0)):  #using If_else statements
     print('please enter a positive value')
 else:
     print('product quantity with price')
     total = product_1*300 + product_2*400 + product_3*500
-    entries = { product_1: 300,product_2 : 400 , product_3 : 500}
+    entries = { product_1: 300,product_2 : 400 , product_3 : 500} #using dictionary
+    x = open('supermarket.txt','a')    #using files
+    print('the amount of all products ')
+    print('the amount of all products ',file=x)
+    print(entries)
     for i,p in entries.items():
         print(i,p)
+        print(i,p,file=x)
     print('the amount that you need to pay is :')
+    print('the amount that you need to pay is :',file=x)
     print(total)
-
+    print(total,file=x)
+    x.close()
 
 
 
