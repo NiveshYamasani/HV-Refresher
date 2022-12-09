@@ -1,0 +1,6 @@
+the amount of all products 
+10 300
+20 400
+30 500
+the amount that you need to pay is :
+26000
